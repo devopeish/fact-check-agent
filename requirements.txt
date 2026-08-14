@@ -4,3 +4,4 @@ python-dotenv
 PyMuPDF
 requests
 beautifulsoup4
+tavily-python
