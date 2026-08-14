@@ -1,7 +1,7 @@
 [README.md](https://github.com/user-attachments/files/31060857/README.md)
 *🔎 Fact-Check Agent
 
-An AI-powered **Fact-Check Agent** that analyzes PDF documents, extracts factual claims, verifies them using web-based evidence, and presents structured fact-checking results.
+- An AI-powered **Fact-Check Agent** that analyzes PDF documents, extracts factual claims, verifies them using web-based evidence, and presents structured fact-checking results.
 
 The project is built with **Python, Streamlit, and Google Gemini**, with a focus on practical Generative AI, structured outputs, and automated claim verification.
 
