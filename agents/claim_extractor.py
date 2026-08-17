@@ -5,10 +5,7 @@ from dotenv import load_dotenv
 from google import genai
 from google.genai import types
 
-
-# ============================================================
 # Environment
-# ============================================================
 
 load_dotenv()
 
@@ -19,10 +16,7 @@ if not API_KEY:
         "GEMINI_API_KEY is missing from .env"
     )
 
-
-# ============================================================
 # Gemini Client
-# ============================================================
 
 client = genai.Client(
     api_key=API_KEY
@@ -31,9 +25,7 @@ client = genai.Client(
 MODEL = "gemini-3.6-flash"
 
 
-# ============================================================
 # Claim Extraction Schema
-# ============================================================
 
 CLAIM_SCHEMA = {
     "type": "object",
@@ -82,9 +74,7 @@ CLAIM_SCHEMA = {
 }
 
 
-# ============================================================
 # Gemini Instructions
-# ============================================================
 
 SYSTEM_INSTRUCTION = """
 You are a factual claim extraction system.
@@ -131,9 +121,7 @@ Return only structured JSON matching the provided schema.
 """
 
 
-# ============================================================
 # Main Function
-# ============================================================
 
 def extract_claims(pages):
     """
